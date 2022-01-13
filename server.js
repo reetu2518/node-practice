@@ -1,4 +1,9 @@
-const express = require("express")
+const express = require("express");
+const app = express();
+
+
+// event emitter
+/*
 const events = require("events");
 const eventEmitter = new events.EventEmitter();
 
@@ -14,5 +19,17 @@ const app = express();
 app.get("/", (req, res) => {
     console.log("home");
 });
+*/
 
-app.listen(3000, console.log("server working at 3000"))
+var f = function(req, res) {
+    console.log("function");
+    return "hiii"
+}
+
+(async () => {
+  let response = await f();
+  let user = await response.json();
+  console.log(user, "user");
+});
+
+app.listen(3000, console.log("server working at 3000"));
