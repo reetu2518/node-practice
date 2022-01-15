@@ -24,7 +24,7 @@
 #### Event loop is an endless loop, which waits for tasks, executes them and then sleeps until it receives more tasks.
 #### The event loop executes tasks from the event queue only when the call stack is empty i.e. there is no ongoing task.
 #### The event loop allows us to use callbacks and promises.
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Node.js allows us to create and handle custom events easily by using events module. Event module includes EventEmitter class which can be used to raise and handle custom events.
 
 ### The following example demonstrates EventEmitter class for raising and handling a custom event.
