@@ -25,9 +25,6 @@
 #### Event loop is an endless loop, which waits for tasks, executes them and then sleeps until it receives more tasks.
 #### The event loop executes tasks from the event queue only when the call stack is empty i.e. there is no ongoing task.
 #### The event loop allows us to use callbacks and promises.
-<<<<<<< HEAD
-## -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-=======
 
 ###### Note: When Node.js starts, it initializes the event loop, processes the provided input script which may make async API calls, schedule timers, or call process.nextTick(), then begins processing the event loop.
 
@@ -42,8 +39,6 @@
 ### What is MongoDB?
 #### MongoDB is a NoSQL database.MongoDB is a JSON document datastore. It allows you to store and query JSON style documents with a few smarts on top. MongoDB stores data in BSON format both internally, and over the network, but that doesn’t mean you can’t think of MongoDB as a JSON database. MongoDB stores data in flexible, JSON-like documents, meaning fields can vary from document to document and data structure can be changed over time
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
->>>>>>> 43d7ca8f26e493b7ca60da331aec229a64e902d6
 ### Node.js allows us to create and handle custom events easily by using events module. Event module includes EventEmitter class which can be used to raise and handle custom events.
 
 ### The following example demonstrates EventEmitter class for raising and handling a custom event.
