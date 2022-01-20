@@ -1,4 +1,5 @@
 const express = require("express");
+const { colours } = require("nodemon/lib/config/defaults");
 const app = express();
 
 
@@ -35,7 +36,7 @@ var f = function(req, res) {
 let arr = Array.from(Array(100+1).keys()).slice();
 // console.log("Array", arr);
 
-let ar = [12,25,35,78,15,35,15,35];
+let ar = [12,25,35,78,18,35,15,3];
 let arSort = ar.sort();
 let uniqArr = []
 let dupliArr = []
@@ -48,15 +49,36 @@ for (let index = 0; index < ar.length; index++) {
     }
 }
 
-console.log("arrsort", arSort);
-console.log("uniqArr", uniqArr);
-console.log("dupliArr", dupliArr);
 
-for (let i = 0; i < ar.length; i++) {
-    element = ar[i];
-    
+
+// console.log("arrsort", arSort);
+// console.log("uniqArr", uniqArr);
+// console.log("dupliArr", dupliArr);
+
+
+// array sorting
+for (let j = 0; j < ar.length; j++) {
+    for (let i = 0; i < ar.length; i++) {
+        if (ar[i-1]>ar[i]) {
+            var tmp = ar[i-1]
+            ar[i-1] = ar[i]
+            ar[i] = tmp
+        }    
+    }
 }
 
+console.log(ar, "sorted array");
+
+
+// callback functions
+function x(y) {
+    console.log("x is executing")
+    y();
+}
+
+x(function y(){
+    console.log("y is executing");
+})
 
 
 app.listen(3000, console.log("server working at 3000"));
