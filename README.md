@@ -42,3 +42,60 @@
 ### Node.js allows us to create and handle custom events easily by using events module. Event module includes EventEmitter class which can be used to raise and handle custom events.
 
 ### The following example demonstrates EventEmitter class for raising and handling a custom event.
+
+  
+### "use strict"
+
+### use strict will restrict to js on the time of execution like for their decleartions, datatypes, intilizatio, declaration 
+### in other words "use stricts" instructs the browser to use the strict mode
+#### function sum(a) {
+####    console.log("hii", a);
+#### }
+#### sum(10)
+
+####  console.log(x);
+#### var x = 10;
+#### var x = 5;
+#### console.log(x, "x redeclare");
+#### let c;
+#### c = 51
+#### let c
+#### console.log(c, "b doesn't allow");
+
+
+### Array from method 
+###  The Array.from() method returns an array from any iterable object.
+###  Create an array from a string:
+###  in other words create array from string to make iterable object
+
+#### let text = "ABCDEF"
+#### let a = Array.from(text)
+#### console.log(a);
+
+###  array keys method
+###  The keys() method returns a new Array Iterator object that contains the keys for each index in the array.
+###  this method get all keys of iterable object for each index in array
+#### console.log(a.keys(), "arrray keys");
+#### for (const key of a.keys()) {
+ ####    console.log(key);
+#### }
+
+
+###  array slice method 
+####  The slice() method returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included) where start and end represent the index of items in that array. The original array will not be modified.
+####  create a shallow copy remove element from given index
+#### let arrSlice = ['aaa', 'bbb', 'cc', 'ddd', 'eee']
+#### console.log(arrSlice.slice(1), "array slice");  
+
+
+### array filter method
+### The filter() method creates a new array with all elements that pass the test implemented by the provided function.
+#### console.log(arrSlice.filter(word => word.length>2), "array filter");
+
+###  Map, filter, reduce methods
+#### let arr = [1, 2, 3, 4, 5, 6]
+
+###  square of numbers
+#### let sqrArr = arr.map((x) => x*2)
+####  console.log(sqrArr, "square of array");
+
